@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tenij | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+    }
+    body {
+      background: #0d0d0d;
+      color: #fff;
+    }
+    header {
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(8px);
+      position: sticky;
+      top: 0;
+    }
+    header h1 {
+      font-size: 26px;
+      font-weight: 700;
+    }
+    nav a {
+      margin-left: 20px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .hero {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 40px;
+      background: linear-gradient(135deg, #1a1a1a, #262626);
+    }
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 20px;
+      color: #aaa;
+      max-width: 600px;
+    }
+    .section {
+      padding: 60px 40px;
+    }
+    .title {
+      font-size: 32px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #1b1b1b;
+      padding: 20px;
+      border-radius: 12px;
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      background: #222;
+    }
+    footer {
+      padding: 20px;
+      text-align: center;
+      background: #111;
+      color: #777;
+    }
+    #clr{
+        color: red;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tenij</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Hi, I'm <span style="color:#4da6ff;">Tenij</span></h2>
+    <p>A passionate creator who loves gaming, making content, and building cool ideas. Welcome to my digital space.</p>
+  </section>
+
+  <section id="about" class="section">
+    <h3 class="title">About Me</h3>
+    <p>Hello! I'm Tenij — a gamer, content creator, and someone who enjoys exploring new skills. I make shorts, design projects, and love learning tech and creative things. This portfolio shows a bit of who I am and what I'm into!</p>
+  </section>
+
+  <section id="hobbies" class="section">
+    <h3 class="title">Hobbies</h3>
+    <div class="card-container">
+      <div class="card"><h4>Gaming</h4><p>I love competitive and story-driven games.</p></div>
+      <div class="card"><h4>Content Creation</h4><p>I make shorts, edits, and fun videos.</p></div>
+      <div class="card"><h4>Tech Exploring</h4><p>I enjoy messing with apps, tools, and cool digital stuff.</p></div>
+      <div class="card"><h4>Learning</h4><p>I like improving myself editing, drawing, reading or anything creative.</p></div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <h3 class="title">Skills</h3>
+    <div class="card-container">
+      <div class="card"><h4>Video Editing</h4><p>Short-form</p></div>
+      <div class="card"><h4>HTML & CSS</h4><p>I can create clean and responsive web pages.</p></div>
+      <div class="card"><h4>Creativity</h4><p>Always brainstorming new cool things.</p></div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h3 class="title">Contact</h3>
+    <p>You can reach me at - <b>(coming soon)</b></p>
+  </section>
+
+  <footer>
+    © 2025 Tenij
+    <br>
+    <div id="clr">Note from Tenijz: This is a sample portfolio made by ChatGPT. I recently deleted the one that I made by myself because it wasn't completed.</div>
+  </footer>
+</body>
+</html>
