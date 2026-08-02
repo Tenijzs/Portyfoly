@@ -1,141 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tenij | Portfolio</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-      scroll-behavior: smooth;
-    }
-    body {
-      background: #0d0d0d;
-      color: #fff;
-    }
-    header {
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: rgba(255, 255, 255, 0.05);
-      backdrop-filter: blur(8px);
-      position: sticky;
-      top: 0;
-    }
-    header h1 {
-      font-size: 26px;
-      font-weight: 700;
-    }
-    nav a {
-      margin-left: 20px;
-      color: #fff;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    .hero {
-      height: 90vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 40px;
-      background: linear-gradient(135deg, #1a1a1a, #262626);
-    }
-    .hero h2 {
-      font-size: 48px;
-      margin-bottom: 10px;
-    }
-    .hero p {
-      font-size: 20px;
-      color: #aaa;
-      max-width: 600px;
-    }
-    .section {
-      padding: 60px 40px;
-    }
-    .title {
-      font-size: 32px;
-      margin-bottom: 20px;
-      text-transform: uppercase;
-    }
-    .card-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .card {
-      background: #1b1b1b;
-      padding: 20px;
-      border-radius: 12px;
-      transition: transform 0.2s ease;
-    }
-    .card:hover {
-      transform: translateY(-6px);
-      background: #222;
-    }
-    footer {
-      padding: 20px;
-      text-align: center;
-      background: #111;
-      color: #777;
-    }
-    #clr{
-        color: red;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tenij.</title>
+<meta name="description" content="Tenij. Gamer, content creator, and someone who enjoys exploring new skills.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Tenij</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#hobbies">Hobbies</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <section class="hero">
-    <h2>Hi, I'm <span style="color:#4da6ff;">Tenij</span></h2>
-    <p>A passionate creator who loves gaming, making content, and building cool ideas. Welcome to my digital space.</p>
+<header class="topbar" id="topbar">
+  <a href="#top" class="wordmark-small">Tenij.</a>
+  <nav class="nav">
+    <a href="#about" class="nav-link">About</a>
+    <a href="#hobbies" class="nav-link">Hobbies</a>
+    <a href="#skills" class="nav-link">Skills</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero" id="top">
+    <a href="#" class="hero-link" id="youtube-link" aria-label="Tenij on YouTube">
+      <h1 class="hero-title">Tenij.</h1>
+    </a>
+    <p class="hero-subtitle">A passionate content creator that posts videos for fun.</p>
   </section>
 
-  <section id="about" class="section">
-    <h3 class="title">About Me</h3>
-    <p>Hello! I'm Tenij — a gamer, content creator, and someone who enjoys exploring new skills. I make shorts, design projects, and love learning tech and creative things. This portfolio shows a bit of who I am and what I'm into!</p>
-  </section>
-
-  <section id="hobbies" class="section">
-    <h3 class="title">Hobbies</h3>
-    <div class="card-container">
-      <div class="card"><h4>Gaming</h4><p>I love competitive and story-driven games.</p></div>
-      <div class="card"><h4>Content Creation</h4><p>I make shorts, edits, and fun videos.</p></div>
-      <div class="card"><h4>Tech Exploring</h4><p>I enjoy messing with apps, tools, and cool digital stuff.</p></div>
-      <div class="card"><h4>Learning</h4><p>I like improving myself editing, drawing, reading or anything creative.</p></div>
+  <section class="section" id="about">
+    <div class="section-inner">
+      <h2 class="section-title">About Me.</h2>
+      <p class="about-text">Heyo, I'm Tenij. A gamer, content creator, and someone who enjoys exploring new skills. I make content on YouTube, design projects, and love learning about technology and other creative things.</p>
     </div>
   </section>
 
-  <section id="skills" class="section">
-    <h3 class="title">Skills</h3>
-    <div class="card-container">
-      <div class="card"><h4>Video Editing</h4><p>Short-form</p></div>
-      <div class="card"><h4>HTML & CSS</h4><p>I can create clean and responsive web pages.</p></div>
-      <div class="card"><h4>Creativity</h4><p>Always brainstorming new cool things.</p></div>
+  <section class="section" id="hobbies">
+    <div class="section-inner">
+      <h2 class="section-title">Hobbies</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3 class="card-title">Gaming</h3>
+          <p class="card-text">I love competitive and story-driven games.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Content Creation</h3>
+          <p class="card-text">I make shorts, edits, and fun videos.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Tech Exploring</h3>
+          <p class="card-text">I enjoy messing with apps, tools, and cool digital stuff.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Learning</h3>
+          <p class="card-text">I like improving myself editing, drawing, reading or anything creative.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="contact" class="section">
-    <h3 class="title">Contact</h3>
-    <p>You can reach me at - <b>(coming soon)</b></p>
+  <section class="section" id="skills">
+    <div class="section-inner">
+      <h2 class="section-title">Skills</h2>
+      <div class="card-grid card-grid-three">
+        <div class="card">
+          <h3 class="card-title">Video Editing</h3>
+          <p class="card-text">Short-form</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">HTML &amp; CSS</h3>
+          <p class="card-text">I can create clean and responsive web pages.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Creativity</h3>
+          <p class="card-text">Always brainstorming new cool things.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    © 2025 Tenij
-    <br>
-    <div id="clr">Note from Tenijz: This is a sample portfolio made by ChatGPT. I recently deleted the one that I made by myself because it wasn't completed.</div>
-  </footer>
+</main>
+
+<footer class="footer" id="contact">
+  <p class="footer-copy">&copy; <span id="year"></span> Tenij</p>
+  <div class="footer-links">
+    <a href="#" class="footer-link" id="footer-youtube">YouTube</a>
+    <span class="footer-divider">|</span>
+    <a href="#" class="footer-link" id="footer-discord">Discord</a>
+    <span class="footer-divider">|</span>
+    <a href="/" class="footer-link" id="footer-website">Website</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
