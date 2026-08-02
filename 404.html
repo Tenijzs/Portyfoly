@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page not found Tenij.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .notfound {
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 24px;
+  }
+
+  .notfound-code {
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    color: var(--text-tertiary);
+    margin: 0 0 24px;
+  }
+
+  .notfound-title {
+    font-family: var(--font-display);
+    font-size: clamp(56px, 10vw, 96px);
+    font-weight: 400;
+    margin: 0;
+    line-height: 1;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+
+  .notfound-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(90deg, var(--underline) 0%, transparent 88%);
+  }
+
+  .notfound-text {
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--text-secondary);
+    margin: 20px 0 40px;
+    max-width: 380px;
+  }
+
+  .notfound-home {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-primary);
+    border: 1px solid var(--surface-border);
+    background: var(--surface);
+    padding: 12px 28px;
+    border-radius: 8px;
+    display: inline-block;
+  }
+</style>
+</head>
+<body>
+
+<main class="notfound">
+  <p class="notfound-code">404</p>
+  <h1 class="notfound-title">Lost the plot.</h1>
+  <p class="notfound-text">This page does not exist. It might have moved, or the link might be wrong.</p>
+  <a href="/" class="notfound-home">Back to Tenij.</a>
+</main>
+
+</body>
+</html>
