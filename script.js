@@ -1,4 +1,3 @@
-
 const YOUTUBE_URL = "https://youtube.com/@tenij.";
 const DISCORD_URL = "https://discord.gg/DzrTbhWWCg";
 
