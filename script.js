@@ -1,4 +1,4 @@
-const YOUTUBE_URL = "https://youtube.com/@tenij.";
+const YOUTUBE_URL = "https://youtube.com/@tenijz";
 const DISCORD_URL = "https://discord.gg/DzrTbhWWCg";
 
 document.getElementById("youtube-link").href = YOUTUBE_URL;
